@@ -1,0 +1,20 @@
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.splash {
+  background-color: black;
+  height: 100vh;
+  color: aliceblue;
+  text-align: center;
+}
+
+.article {
+  height: 50vh;
+}
+
+span {
+  color: pink;
+}
