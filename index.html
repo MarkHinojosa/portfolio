@@ -7,25 +7,58 @@
   <title>Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
   <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
 <body>
   <div class="wrapper">
     <div class="splash">
       <section>
-        <div>
+        <div class="splash__text block__text--center">
           Hello, I'm
-          <span>
+          <span class="splash__text splash__text__span--pink">
             Mark Hinojosa
           </span>
         </div>
-
+        <div class="splash__text splash__text--padding">
+          A full-stack web developer
+        </div>
+        <div class="splash__button">
+          <div class="splash__button__text">
+            View my work
+          </div>
+          <div id="arrow" class="splash__button__arrow">-></div>
+        </div>
       </section>
-
     </div>
+    <nav class="navbar">
+      <ul>
+        <li class="navbar__item">
+          <a href="#home" class=" navbar__item__anchor ">HOME</a>
+        </li>
+        <li class="navbar__item ">
+          <a href="#home " class=" navbar__item__anchor">ABOUT</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#home" class=" navbar__item__anchor ">PORTFOLIO</a>
+        </li>
+        <li class="navbar__item ">
+          <a href="#home " class=" navbar__item__anchor">BLOG</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#home" class=" navbar__item__anchor ">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="about ">
+      <div class="revealOnScroll " data-animation="bounceIn ">ABOUT</div>
+    </section>
   </div>
-  blah
 </body>
+
 
 </html>
