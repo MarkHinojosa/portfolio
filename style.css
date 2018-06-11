@@ -104,12 +104,11 @@ block {
   height: 1000px;
 }
 
-.revealOnScroll {
-  opacity: 0;
-  font-size: 5rem;
-}
-
-.animated {
-  animation-duration: 1s;
-  animation-delay: 2s;
+.about__header {
+  width: 400px;
+  height: 100px;
+  margin: 100px auto;
+  padding-top: 50px;
+  background: red;
+  text-align: center;
 }
