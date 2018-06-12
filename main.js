@@ -1,7 +1,14 @@
 $(document).ready(function() {
-  let about = $("#blah").text();
-  $("#blah").text("not about");
-  console.log(about);
+  const windowHeight = $(window).height();
+  const aboutTrigger = $(".about").position().top;
+  $(document).on("scroll", () => {
+    const scrollH = $(document).scrollTop();
+    if (aboutTrigger > windowHeight) {
+      console.log("triggered");
+      $(".about").css("opacity", "1");
+    }
+  });
+
   AOS.init({
     duration: 1200
   });
