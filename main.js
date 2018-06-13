@@ -1,12 +1,17 @@
 $(document).ready(function() {
   const windowHeight = $(window).height();
-  const halfWindowHeight = windowHeight / 2;
-  console.log(halfWindowHeight);
+  const thirdWindowHeight = windowHeight / 3;
+  console.log(thirdWindowHeight);
+
   const aboutTrigger = $(".about").position().top;
+  console.log(aboutTrigger, "about trigger");
   $(document).on("scroll", () => {
     const scrollH = $(document).scrollTop();
-    if (scrollH > halfWindowHeight) {
+    // console.log(scrollH, "scrollh");
+    if (scrollH > thirdWindowHeight) {
       $(".about").css("opacity", "1");
+      $(".about__header__underline").css("opacity", "1");
+      $(".about__header__underline").attr("data-aos", "slide-right");
     } else {
       $(".about").css("opacity", "0");
     }
