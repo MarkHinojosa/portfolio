@@ -14,9 +14,12 @@
 </head>
 
 <body>
+  <!-- <canvas class="canvas">canvas
+    <div class="test">blah</div>
+  </canvas> -->
   <div class="wrapper">
     <div class="splash">
-      <!-- <canvas class="canvas">canvas -->
+
       <section>
 
         <div class="splash__text block__text--center">
@@ -36,7 +39,7 @@
         </div>
 
       </section>
-      <!-- </canvas> -->
+
     </div>
     <nav class="navbar">
       <ul>
@@ -60,13 +63,22 @@
     <!-- about section -->
     <section class="about ">
       <div class="about__box">
-        <div class="text--black about__header" data-aos="slide-right" id="aboutText">ABOUT
+        <div class="text--black about__header" data-aos="fade-right" data-aos-anchor-placement="top-bottom">ABOUT
         </div>
       </div>
-      <hr class="blah" />
+      <hr class="header__underline" data-aos="fade-right" data-aos-anchor-placement="top-center" aos-delay="500" />
     </section>
   </div>
   <script src="plugins/aos/aos.js "></script>
+  <script type="text/javascript">
+    AOS.init({
+      offset: 200,
+      duration: 800,
+      easing: 'ease-in-sine',
+      delay: 100,
+    }
+    );
+  </script>
   <script src="https://code.jquery.com/jquery-2.2.4.js "></script>
   <script src="main.js "></script>
   <script src="canvas.js "></script>

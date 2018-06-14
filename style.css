@@ -5,7 +5,11 @@ body {
 }
 
 .canvas {
-  background-color: red;
+}
+
+.test {
+  color: #e31b6d;
+  background-color: #1b242f;
 }
 
 .splash {
@@ -126,18 +130,25 @@ block {
   width: 40%;
 }
 .about__header {
+  padding-top: 25%;
   align-content: center;
   height: 60px;
-  font-size: 40pt;
+  font-size: 30pt;
   text-align: center;
   font-weight: bold;
 }
 
-.blah {
+.header__underline {
   background-color: #444649;
   color: #1b242f;
   height: 5px;
   margin-left: auto;
   margin-right: auto;
   width: 13%;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
 }

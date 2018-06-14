@@ -16,8 +16,4 @@ $(document).ready(function() {
       $(".about").css("opacity", "0");
     }
   });
-
-  AOS.init({
-    duration: 1200
-  });
 });
