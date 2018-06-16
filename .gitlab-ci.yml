@@ -1,6 +1,7 @@
 # Full project: https://gitlab.com/mark_hinojosa/portfolio
 
 variables:
+  AWS_DEFAULT_REGION: "us-east-2"
   AWS_ACCESS_KEY_ID: "AKIAIN42ZTZYPTVPSS7Q"
   AWS_SECRET_ACCESS_KEY: “KeZQ7PdO4JCZGKZNJFZwJTH6vCJislQWrLaFpZKh”
 deploy:
