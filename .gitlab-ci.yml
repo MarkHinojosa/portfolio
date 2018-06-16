@@ -4,7 +4,7 @@ variables:
   AWS_ACCESS_KEY_ID: "AKIAIN42ZTZYPTVPSS7Q"
   AWS_SECRET_ACCESS_KEY: “KeZQ7PdO4JCZGKZNJFZwJTH6vCJislQWrLaFpZKh”
 deploy:
-image: python:latest
+  image: python:latest
 script:
   - pip install awscli
   - aws s3 cp ./ s3://fullstackdevatx.com/ --recursive --exclude "*" --include "*.html"
