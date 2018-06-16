@@ -1,13 +1,12 @@
-# This file is a template, and might need editing before it works on your project.
-# Full project: https://gitlab.com/pages/plain-html
-pages:
-  stage: deploy
+# Full project: https://gitlab.com/mark_hinojosa/portfolio
+
+variables:
+  AWS_ACCESS_KEY_ID: "AKIAIN42ZTZYPTVPSS7Q"
+  AWS_SECRET_ACCESS_KEY: “KeZQ7PdO4JCZGKZNJFZwJTH6vCJislQWrLaFpZKh”
+deploy:
+  image: python:latest
   script:
-  - mkdir .public
-  - cp -r * .public
-  - mv .public public
-  artifacts:
-    paths:
-    - public
-  only:
+  - pip install awscli
+  - aws s3 cp ./ s3://fullstackdevatx.com/ --recursive --exclude "*" --include "*.html"
+   only:
   - master
