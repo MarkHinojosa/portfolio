@@ -8,3 +8,5 @@ deploy:
   script:
   - pip install awscli
   - aws s3 cp ./ s3://fullstackdevatx.com/ --recursive --exclude "*" --include "*.html"
+  only:
+    - master
