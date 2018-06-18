@@ -8,7 +8,7 @@ body {
 }
 
 .test {
-  color: #e31b6d;
+  color: goldenrod;
   background-color: #1b242f;
 }
 
@@ -64,6 +64,11 @@ block {
   border: 2px solid aliceblue;
 }
 
+a,
+u {
+  text-decoration: none;
+}
+
 .splash__button__text {
   font-size: 16px;
 }
@@ -86,7 +91,6 @@ block {
   top: 0px;
   list-style-type: none;
   display: flex;
-  border-bottom: 3px solid teal;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -110,11 +114,10 @@ block {
 
 .navbar__item__anchor:hover {
   transition: color 0.5s;
-  color: #e31b6d;
+  color: goldenrod;
 }
 
 .about {
-  border: yellow solid 3px;
   flex-flow: column;
   justify-content: center;
   opacity: 0;
@@ -144,11 +147,17 @@ block {
   height: 5px;
   margin-left: auto;
   margin-right: auto;
-  width: 13%;
+  width: 8%;
+}
+.about__container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  height: 100%;
+  background-color: rgb(217, 255, 0);
+  grid-gap: 10px;
 }
 
-.box {
-  height: 100px;
-  width: 100px;
-  background-color: red;
+.about__container__item1 {
+  height: 30%;
+  background-color: blue;
 }
