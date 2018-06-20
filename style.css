@@ -1,3 +1,8 @@
+a,
+u {
+  text-decoration: none;
+}
+
 body {
   height: 100%;
   margin: 0px;
@@ -62,11 +67,6 @@ block {
   color: aliceblue;
   cursor: pointer;
   border: 2px solid aliceblue;
-}
-
-a,
-u {
-  text-decoration: none;
 }
 
 .splash__button__text {
