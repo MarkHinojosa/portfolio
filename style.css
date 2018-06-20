@@ -27,7 +27,7 @@ body {
 
 .text--black {
   font-family: "Raleway", sans-serif;
-  color: #444649;
+  color: #444649!;
 }
 
 .splash__text {
@@ -121,7 +121,7 @@ u {
   flex-flow: column;
   justify-content: center;
   opacity: 0;
-  /* display: flex; */
+  display: flex;
   align-content: center;
   height: 1000px;
 }
@@ -154,28 +154,26 @@ u {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   display: grid;
   height: 100%;
-  background-color: rgb(217, 255, 0);
   grid-gap: 5%;
 }
 
 .about__container__item1 {
+  padding: 5%;
   flex-direction: column;
   display: flex;
   align-items: center;
   width: 100%;
   height: 20%;
-  background-color: blue;
 }
 
 .about__octagon__image {
   height: 100px;
-  padding: 10%;
+  padding: 5%;
 }
 
 .about__container_item1__title {
   text-align: center;
   margin: auto;
-  color: aliceblue;
 }
 
 .about__container_item1__text {
