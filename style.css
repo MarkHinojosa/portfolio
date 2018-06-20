@@ -87,6 +87,7 @@ u {
 }
 
 .navbar {
+  z-index: 100;
   position: sticky;
   top: 0px;
   list-style-type: none;
@@ -133,7 +134,7 @@ u {
   width: 40%;
 }
 .about__header {
-  padding-top: 25%;
+  padding-top: 15%;
   align-content: center;
   height: 60px;
   font-size: 30pt;
