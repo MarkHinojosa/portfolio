@@ -94,7 +94,9 @@ block {
   display: flex;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   overflow: hidden;
   background-color: #1b242f;
 }
@@ -175,10 +177,16 @@ block {
 .about__container_item1__title {
   text-align: center;
   margin: auto;
+  padding: 5px;
 }
 
 .about__container_item1__text {
   text-align: center;
   margin: auto;
   color: aliceblue;
+}
+
+.text__h3--black {
+  font-size: 18pt;
+  font-family: "Raleway-bold";
 }
