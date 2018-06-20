@@ -1,20 +1,20 @@
 # Full project: https://gitlab.com/mark_hinojosa/portfolio
 
-variables:
-  REGION: "us-east-2"
-  AWS_ACCESS_KEY_ID: "AKIAIN42ZTZYPTVPSS7Q"
-  AWS_SECRET_ACCESS_KEY: “KeZQ7PdO4JCZGKZNJFZwJTH6vCJislQWrLaFpZKh”
-deploy:
-  stage: deploy
-  image: python:latest
-  script:
-  - mkdir .public
-  - cp -r * .public
-  - mv .public public
-  - pip install awscli
-  - aws s3 cp ./ s3://fullstackdevatx.com/ --recursive --exclude "*" --include "*.html"
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
+# variables:
+#   REGION: "us-east-2"
+#   AWS_ACCESS_KEY_ID: "AKIAIN42ZTZYPTVPSS7Q"
+#   AWS_SECRET_ACCESS_KEY: “KeZQ7PdO4JCZGKZNJFZwJTH6vCJislQWrLaFpZKh”
+# deploy:
+#   stage: deploy
+#   image: python:latest
+#   script:
+#   - mkdir .public
+#   - cp -r * .public
+#   - mv .public public
+#   - pip install awscli
+#   - aws s3 cp ./ s3://fullstackdevatx.com/ --recursive --exclude "*" --include "*.html"
+#   artifacts:
+#     paths:
+#     - public
+#   only:
+#   - master
