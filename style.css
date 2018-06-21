@@ -297,7 +297,6 @@ block {
 }
 
 .projects__container {
-  border: 3px solid purple;
   height: 50%;
   width: 60%;
   margin: auto;
@@ -316,18 +315,27 @@ block {
 }
 
 .item--i {
+  height: 100%;
   grid-area: i;
-  background-color: aqua;
+  background-image: url(./images/blog.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item--j {
+  height: 100%;
   grid-area: j;
-  background-color: blueviolet;
+  background-image: url(./images/fate.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item--k {
+  height: 100%;
   grid-area: k;
-  background-color: yellow;
+  background-image: url(./images/project-seed.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .project__image {
