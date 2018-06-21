@@ -87,6 +87,7 @@ block {
 }
 
 .navbar {
+  height: 60px;
   z-index: 100;
   position: sticky;
   top: 0px;
@@ -94,11 +95,17 @@ block {
   display: flex;
   list-style-type: none;
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   padding-left: 20px;
   overflow: hidden;
   background-color: #1b242f;
+}
+
+.navbar__ul {
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 .navbar__item {
@@ -120,6 +127,39 @@ block {
   color: goldenrod;
 }
 
+/* .navbar__icons {
+  height: 100px;
+} */
+
+.navbar__section__icon-Box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 90%;
+  width: 100%;
+  border: 3px solid red;
+}
+
+.navbar__section__icon-Box > div {
+  height: 60px;
+}
+
+.navbar__gitlab__icon {
+  height: 100%;
+}
+
+/* .navbar__github__icon {
+  height: 50%;
+}
+
+.navbar__linkedin__icon {
+  height: 50%;
+} */
+
+/* .github__box {
+  align-items: center;
+  align-content: center;
+  display: flex;
+} */
 .about {
   flex-flow: column;
   justify-content: center;
