@@ -1,19 +1,36 @@
 $(document).ready(function() {
   const windowHeight = $(window).height();
   const thirdWindowHeight = windowHeight / 3;
-  console.log(thirdWindowHeight);
+  // console.log(thirdWindowHeight);
 
-  const aboutTrigger = $(".about").position().top;
-  console.log(aboutTrigger, "about trigger");
+  const aboutAnchor = $("a[name = aboutAnchor]").position().top;
+  const portfolioAnchor = $("a[name = portfolioAnchor]").position().top;
+
   $(document).on("scroll", () => {
-    const scrollH = $(document).scrollTop();
-    // console.log(scrollH, "scrollh");
-    if (scrollH > thirdWindowHeight) {
-      $(".about").css("opacity", "1");
-      $(".about__header__underline").css("opacity", "1");
-      $(".about__header__underline").attr("data-aos", "slide-right");
+    let inView = "";
+    const aboutAnchor = $("a[name = aboutAnchor]").position().top;
+    const portfolioAnchor = $("a[name = portfolioAnchor]").position().top;
+    const scrollHeight = $(document).scrollTop();
+    if (
+      scrollHeight >= aboutAnchor - 100 &&
+      scrollHeight <= portfolioAnchor - 100
+    ) {
+      inView = "about";
+    } else if (scrollHeight >= portfolioAnchor - 100) {
+      console.log("portfolio");
+      inView = "portfolio";
     } else {
-      $(".about").css("opacity", "0");
+      $("#portfolioButton").css("color", "white");
     }
+
+    if (inView === "about") {
+      $("#portfolioButton").css("color", "white");
+      $("#aboutButton").css("color", "gold");
+    }
+    if (inView === "portfolio") {
+      $("#aboutButton").css("color", "white");
+      $("#portfolioButton").css("color", "gold");
+    }
+    console.log(inView);
   });
 });

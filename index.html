@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- testing gitlab auto dev hmm doesn't test unless master?-->
+<!-- Hello, thanks for taking a look at my portfolio.. It is a work in progress and will be updated as my skills grow-->
 
 <head>
   <meta charset="utf-8" />
@@ -15,12 +15,14 @@
 </head>
 
 <body>
+  <a name="homeAnchor"></a>
   <!-- <canvas class="canvas">canvas
     <div class="test">blah</div>
   </canvas> -->
   <div class="wrapper">
     <div class="splash">
       <section>
+
         <div class="splash__text block__text--center">
           Hello, I'm
           <span class="splash__text splash__text__span--pink">
@@ -46,13 +48,13 @@
       <a name="navAnchor"></a>
       <ul class="navbar__ul">
         <li class="navbar__item">
-          <a href="#home" class=" navbar__item__anchor ">HOME</a>
+          <a href="#homeAnchor" id="homeButton" class=" navbar__item__anchor ">HOME</a>
         </li>
         <li class="navbar__item ">
-          <a href="#aboutAnchor" class=" navbar__item__anchor">ABOUT</a>
+          <a href="#aboutAnchor" id="aboutButton" class=" navbar__item__anchor">ABOUT</a>
         </li>
         <li class="navbar__item">
-          <a href="#portfolioAnchor" class=" navbar__item__anchor ">PORTFOLIO</a>
+          <a href="#portfolioAnchor" id="portfolioButton" class=" navbar__item__anchor ">PORTFOLIO</a>
         </li>
         <li class="navbar__item ">
           <a href="#home " class=" navbar__item__anchor">BLOG</a>
@@ -166,7 +168,6 @@
           <div data-aos="fade-up" data-aos-delay="600" data-aos-offset "50" class="item--k">
           </div>
         </a>
-
       </div>
     </section>
   </div>
@@ -185,6 +186,5 @@
   <script src="main.js "></script>
   <script src="canvas.js "></script>
 </body>
-
 
 </html>
