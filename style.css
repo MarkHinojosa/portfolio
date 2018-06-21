@@ -297,6 +297,7 @@ block {
 }
 
 .projects__container {
+  padding-top: 2%;
   height: 50%;
   width: 60%;
   margin: auto;

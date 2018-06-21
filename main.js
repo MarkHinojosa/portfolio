@@ -22,7 +22,6 @@ $(document).ready(function() {
     } else {
       $("#portfolioButton").css("color", "white");
     }
-
     if (inView === "about") {
       $("#portfolioButton").css("color", "white");
       $("#aboutButton").css("color", "gold");
