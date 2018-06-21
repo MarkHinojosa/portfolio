@@ -166,11 +166,6 @@ block {
   height: 100%;
 }
 
-/* .github__box {
-  align-items: center;
-  align-content: center;
-  display: flex;
-} */
 .about {
   flex-flow: column;
   justify-content: center;
@@ -205,7 +200,6 @@ block {
 }
 .about__container {
   padding: 80px 8% 3%;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   grid-template-areas:
     "a b c d"
     "e e f f";
@@ -215,7 +209,6 @@ block {
 }
 
 .about__container__item1 {
-  /* padding: 5%; */
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -249,13 +242,11 @@ block {
 
 .about__octagon__image {
   height: 100px;
-  /* padding: 5%; */
 }
 
 .octagon__box {
   display: flex;
   height: 100%;
-  /* padding: 5%; */
   background-image: url("./images/hexagon-xxl.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -298,4 +289,47 @@ block {
 }
 .about__container_bio__paragraph {
   padding-top: 2%;
+}
+
+.projects {
+  background-color: beige;
+  height: 100vh;
+}
+
+.projects__container {
+  border: 3px solid purple;
+  height: 50%;
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "h i"
+    "j k";
+}
+
+.item--h {
+  height: 100%;
+  grid-area: h;
+  background-image: url(./images/memoryMatch.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item--i {
+  grid-area: i;
+  background-color: aqua;
+}
+
+.item--j {
+  grid-area: j;
+  background-color: blueviolet;
+}
+
+.item--k {
+  grid-area: k;
+  background-color: yellow;
+}
+
+.project__image {
+  height: 100%;
 }
