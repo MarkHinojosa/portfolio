@@ -169,7 +169,6 @@ block {
 .about {
   flex-flow: column;
   justify-content: center;
-  opacity: 1;
   display: flex;
   align-content: center;
   height: 1000px;
@@ -307,12 +306,22 @@ block {
     "j k";
 }
 
-.item--h {
+.projects__container__item__h {
   height: 100%;
   grid-area: h;
   background-image: url(./images/memoryMatch.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.projects__container__item__h__text {
+  opacity: 0;
+  height: 100%;
+  color: red;
+}
+
+#item__h__anchor :hover > div {
+  opacity: 1;
 }
 
 .item--i {

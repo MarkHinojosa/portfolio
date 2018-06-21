@@ -30,6 +30,11 @@ $(document).ready(function() {
       $("#aboutButton").css("color", "white");
       $("#portfolioButton").css("color", "gold");
     }
-    console.log(inView);
+  });
+
+  $("#test").mouseover(function() {
+    console.log("line 36");
+    $("#test").css("background-color", "white");
+    $(".projects__container__item__h__text").attr("data-aos", "fade-in");
   });
 });
