@@ -307,6 +307,7 @@ block {
 }
 
 .projects__container__item__h {
+  display: flex;
   height: 100%;
   grid-area: h;
   background-image: url(./images/memoryMatch.png);
@@ -315,9 +316,17 @@ block {
 }
 
 .projects__container__item__h__text {
+  text-align: center;
+  margin: auto;
+  align-content: center;
+  width: 100%;
   opacity: 0;
   height: 100%;
-  color: red;
+  color: black;
+}
+
+.projects__container__item__h__text__h3 {
+  font-size: 18pt;
 }
 
 #item__h__anchor :hover > div {

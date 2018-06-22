@@ -34,7 +34,8 @@ $(document).ready(function() {
 
   $("#test").mouseover(function() {
     console.log("line 36");
-    $("#test").css("background-color", "white");
-    $(".projects__container__item__h__text").attr("data-aos", "fade-in");
+    $("#test").css("background-image", "none");
+    // $(".projects__container__item__h__text").attr("data-aos", "fade-in");
+    $(".projects__container__item__h__text").css("z-index", "100");
   });
 });
