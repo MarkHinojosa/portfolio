@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 a,
 u {
   text-decoration: none;
@@ -18,6 +24,7 @@ body {
 }
 
 .splash {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,6 +94,7 @@ block {
 }
 
 .navbar {
+  width: 100%;
   height: 85px;
   z-index: 100;
   position: sticky;
@@ -97,7 +105,7 @@ block {
   margin: 0;
   padding-top: 2px;
   padding-bottom: 2px;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   overflow: hidden;
   background-color: #1b242f;
 }
