@@ -126,7 +126,8 @@ block {
   font-size: 25px;
   display: block;
   text-align: center;
-  padding-right: 14px;
+  padding-right: 10px;
+  padding-left: 18px;
   text-decoration: none;
 }
 
@@ -138,7 +139,7 @@ block {
 .navbar__section__icon-Box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 90%;
+  height: 100%;
   width: 100%;
 }
 
