@@ -296,26 +296,21 @@ block {
 }
 
 .projects__container {
-  padding-top: 2%;
-  height: 50%;
-  width: 60%;
-  margin: auto;
-  display: grid;
+  width: 100%;
+  overflow: hidden;
+  margin: 0.2em auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 30% 30% 30% 30%;
   grid-template-areas:
-    "h i"
-    "j k";
+    "xeta h i xet"
+    "xeta j k xet";
+  padding-top: 5%;
+  height: 70%;
+  display: grid;
 }
 
-.projects__container__item__h {
-  display: flex;
-  height: 100%;
-  grid-area: h;
-  background-image: url(./images/memoryMatch.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.projects__container__item__h__text {
+.projects__container__item__h__content {
+  background-color: aliceblue;
   text-align: center;
   margin: auto;
   align-content: center;
@@ -325,18 +320,20 @@ block {
   color: black;
 }
 
-.projects__container__item__h__text__h3 {
-  font-size: 18pt;
-}
-
-#item__h__anchor :hover > div {
-  opacity: 1;
+.item--h {
+  overflow: hidden;
+  object-fit: contain;
+  height: 100%;
+  grid-area: h;
+  /* background-image: url(./images/memoryMatch.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item--i {
   height: 100%;
   grid-area: i;
-  background-image: url(./images/blog.png);
+  /* background-image: url(./images/blog.png); */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -344,19 +341,12 @@ block {
 .item--j {
   height: 100%;
   grid-area: j;
-  background-image: url(./images/fate.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .item--k {
   height: 100%;
   grid-area: k;
-  background-image: url(./images/project-seed.png);
+  /* background-image: url(./images/project-seed.png); */
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.project__image {
-  height: 100%;
 }
