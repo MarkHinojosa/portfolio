@@ -87,7 +87,7 @@ block {
 }
 
 .navbar {
-  height: 60px;
+  height: 85px;
   z-index: 100;
   position: sticky;
   top: 0px;
@@ -115,7 +115,7 @@ block {
 
 .navbar__item__anchor {
   color: aliceblue;
-  font-size: 18px;
+  font-size: 25px;
   display: block;
   text-align: center;
   padding-right: 14px;
@@ -126,10 +126,6 @@ block {
   transition: color 0.5s;
   color: goldenrod;
 }
-
-/* .navbar__icons {
-  height: 100px;
-} */
 
 .navbar__section__icon-Box {
   display: grid;
@@ -164,6 +160,10 @@ block {
 
 .icon__anchor {
   height: 100%;
+}
+
+.icons:hover {
+  opacity: 0.5;
 }
 
 .about {
