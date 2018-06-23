@@ -1,8 +1,6 @@
 $(document).ready(function() {
   const windowHeight = $(window).height();
   const thirdWindowHeight = windowHeight / 3;
-  // console.log(thirdWindowHeight);
-
   const aboutAnchor = $("a[name = aboutAnchor]").position().top;
   const portfolioAnchor = $("a[name = portfolioAnchor]").position().top;
 
@@ -38,18 +36,4 @@ $(document).ready(function() {
     };
     checkCurrentview();
   });
-
-  // $("#test").hover(
-  //   function() {
-  //     console.log("on");
-  //     $(".projects__container__item__h__content").css("opacity", "1");
-  //     $(".projects__container__item__h__content").attr("data-aos", "fade-in");
-
-  //     // $("#test").css("background-image", "none");
-  //   },
-  //   function() {
-  //     console.log("off");
-  //     $(".projects__container__item__h__content").css("opacity", "0");
-  //   }
-  // );
 });
