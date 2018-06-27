@@ -19,220 +19,219 @@
 
 <body>
   <a name="homeAnchor"></a>
-  <!-- <canvas class="canvas">canvas
-    <div class="test">blah</div>
-  </canvas> -->
-  <div class="wrapper">
-    <div class="splash">
-      <section>
-
-        <div class="splash__text block__text--center">
-          Hello, I'm
-          <span class="splash__text splash__text__span--pink">
-            Mark Hinojosa
-          </span>
-        </div>
-        <div class="splash__text splash__text--padding">
-          A full-stack web developer
-        </div>
-        <!-- Click Box -->
-        <a href="#navAnchor">
-          <div class="splash__button">
-            <div class="splash__button__text">
-              View my work
+  
+    <div class="wrapper">
+        <canvas id="canvas" width="150" height="150"></canvas>
+      <div class="splash">
+        <section>
+          <div class="splash__text block__text--center">
+            Hello, I'm
+            <span class="splash__text splash__text__span--pink">
+              Mark Hinojosa
+            </span>
+          </div>
+          <div class="splash__text splash__text--padding">
+            A full-stack web developer
+          </div>
+          <!-- Click Box -->
+          <a href="#navAnchor">
+            <div class="splash__button">
+              <div class="splash__button__text">
+                View my work
+              </div>
+              <div id="arrow" class="splash__button__arrow">-></div>
             </div>
-            <div id="arrow" class="splash__button__arrow">-></div>
-          </div>
-        </a>
-      </section>
-    </div>
-    <!-- navigation bar -->
-    <nav class="navbar">
-      <a name="navAnchor"></a>
-      <ul class="navbar__ul">
-        <li class="navbar__item">
-          <a href="#homeAnchor" id="homeButton" class=" navbar__item__anchor ">HOME</a>
-        </li>
-        <li class="navbar__item ">
-          <a href="#aboutAnchor" id="aboutButton" class=" navbar__item__anchor">ABOUT</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#portfolioAnchor" id="portfolioButton" class=" navbar__item__anchor ">PORTFOLIO</a>
-        </li>
-        <li class="navbar__item ">
-          <a href="#home " class=" navbar__item__anchor">BLOG</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#home" class=" navbar__item__anchor ">CONTACT</a>
-        </li>
-      </ul>
-      <!-- breaks remaining area of navbar into grid -->
-      <section class="navbar__section__icon-Box">
-        <div></div>
-        <div></div>
-        <!-- right grid section of navbar contains icons within -->
-        <div>
-          <a class="icons" href="https://gitlab.com/mark_hinojosa">
-            <img data-aos="fade-in" data-aos-delay="100" data-aos-offset "50" src="./images/gitlab.png" alt="" class="navbar__gitlab__icon">
           </a>
-          <a class="icons" href="https://github.com/MarkHinojosa">
-            <img data-aos="fade-in" data-aos-delay="100" data-aos-offset "50" src="./images/github.png" alt="" class="navbar__github__icon">
-          </a>
-          <a class="icon__anchor icons" href="https://www.linkedin.com/in/mark-hinojosa-78a181147/">
-            <img data-aos="fade-in" data-aos-delay="100" data-aos-offset "50" src="./images/linkedin.png" alt="" class="navbar__linkedin__icon">
-          </a>
-        </div>
-      </section>
-    </nav>
-    <!-- about section -->
-    <section class="about">
-      <a name="aboutAnchor"></a>
-      <div class="about__box">
-        <div class="text--black about__header" data-aos="fade-right" data-aos-anchor-placement="top-bottom">ABOUT
-        </div>
+        </section>
       </div>
-      <hr class="header__underline" data-aos="fade-right" data-aos-anchor-placement="top-center">
-      <div class="about__container">
-        <!-- hex with monitor -->
-        <div class="about__container__item1 item--a">
-          <div class="octagon__box" style="height: 100px; width:100px;" data-aos="flip-right" data-aos-delay="100">
-            <img class="octagon__box__image" src="./images/monitor.png" style="height: 50%; width: 50%;" alt="">
-          </div>
-          <article data-aos="fade-in" data-aos-delay="100" data-aos-offset "160">
-            <h3 class="about__container_item1__title text__h3--black">Integration</h3>
-            <p class="about__container_item1__title">Using standards and best practices to speed up development and debugging.</p>
-          </article>
-        </div>
-        <!-- hex with bulb -->
-        <div class="about__container__item1 item--b">
-          <div class="octagon__box" style="height: 100px; width:100px;" data-aos="flip-right" data-aos-delay="400">
-            <img class="octagon__box__image" src="./images/intuitive.png" style="height: 50%; width: 50%;" alt="">
-          </div>
-          <article data-aos="fade-in" data-aos-delay="400" data-aos-offset "160">
-            <h3 class="about__container_item1__title text__h3--black">Resolve</h3>
-            <p class="about__container_item1__title">Full stack experience means I can tackle all development aspects of a project.</p>
-          </article>
-        </div>
-        <!-- hex with bullhorn -->
-        <div class="about__container__item1 item--c">
-          <div class="octagon__box" style="height: 100px; width:100px;" data-aos="flip-right" data-aos-delay="650">
-            <img class="octagon__box__image" src="./images/bullhorn.png" style="height: 50%; width: 50%;" alt="">
-          </div>
-          <article data-aos="fade-in" data-aos-delay="650" data-aos-offset "160">
-            <h3 class="about__container_item1__title text__h3--black">Communication</h3>
-            <p class="about__container_item1__title" class='text--black'>A priority to communicate with my team allows for accelerated success.</p>
-          </article>
-        </div>
-        <!-- hex with clock -->
-        <div class="about__container__item1 item--d">
-          <div class="octagon__box" style="height: 100px; width:100px;" data-aos="flip-right" data-aos-delay="900">
-            <img class="octagon__box__image" src="./images/response.png" style="height: 50%; width: 50%;" alt="">
-          </div>
-          <article data-aos="fade-in" data-aos-delay="900" data-aos-offset "160">
-            <h3 class="about__container_item1__title text__h3--black">Responsive</h3>
-            <p class="about__container_item1__title">Utilizing the latest tools and frameworks to maximize responsiveness on all devices.</p>
-          </article>
-        </div>
-        <div class="item--e">
-          <img data-aos="fade-right" data-aos-delay="400" data-aos-offset "160" class="mypic" src="./images/editedme.jpg" alt="mypic">
-        </div>
-        <div class="item--f">
-          <h3 data-aos="fade-left" data-aos-delay="400" data-aos-offset "160" class="about__container_bio__title text__h3--black">Who is Mark?</h3>
-          <p data-aos="fade-left" data-aos-delay="400" data-aos-offset "160" class="about__container_bio__paragraph text--black">
-            A MERN Full-Stack Web Developer who has a passion for building new digital products. I am constantly excited when I learn
-            how to use new tools because of the possibilities it unlocks for me. I love sharing my knowledge and knowing
-            that I have saved somebody on my team time and struggle. My greatest goal in life is to contribute to a project
-            that enhances peoples lives across the world. </p>
-        </div>
+    
+  <!-- navigation bar -->
+  <nav class="navbar">
+    <a name="navAnchor"></a>
+    <ul class="navbar__ul">
+      <li class="navbar__item">
+        <a href="#homeAnchor" id="homeButton" class=" navbar__item__anchor ">HOME</a>
+      </li>
+      <li class="navbar__item ">
+        <a href="#aboutAnchor" id="aboutButton" class=" navbar__item__anchor">ABOUT</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#portfolioAnchor" id="portfolioButton" class=" navbar__item__anchor ">PORTFOLIO</a>
+      </li>
+      <li class="navbar__item ">
+        <a href="#home " class=" navbar__item__anchor">BLOG</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#home" class=" navbar__item__anchor ">CONTACT</a>
+      </li>
+    </ul>
+    <!-- breaks remaining area of navbar into grid -->
+    <section class="navbar__section__icon-Box">
+      <div></div>
+      <div></div>
+      <!-- right grid section of navbar contains icons within -->
+      <div>
+        <a class="icons" href="https://gitlab.com/mark_hinojosa">
+          <img data-aos="fade-in" data-aos-delay="100" data-aos-offset "50" src="./images/gitlab.png" alt="" class="navbar__gitlab__icon">
+        </a>
+        <a class="icons" href="https://github.com/MarkHinojosa">
+          <img data-aos="fade-in" data-aos-delay="100" data-aos-offset "50" src="./images/github.png" alt="" class="navbar__github__icon">
+        </a>
+        <a class="icon__anchor icons" href="https://www.linkedin.com/in/mark-hinojosa-78a181147/">
+          <img data-aos="fade-in" data-aos-delay="100" data-aos-offset "50" src="./images/linkedin.png" alt="" class="navbar__linkedin__icon">
+        </a>
       </div>
     </section>
-    <!-- projects section -->
-    <section class="projects">
-      <a name="portfolioAnchor"></a>
-      <div class="about__box">
-        <div class="text--black about__header" data-aos="fade-right" data-aos-anchor-placement="top-bottom">Projects
-        </div>
+  </nav>
+  <!-- about section -->
+  <section class="about">
+    <a name="aboutAnchor"></a>
+    <div class="about__box">
+      <div class="text--black about__header" data-aos="fade-right" data-aos-anchor-placement="top-bottom">ABOUT
       </div>
-      <hr class="header__underline" data-aos="fade-right" data-aos-anchor-placement="top-center">
-      <!-- PROJECTS GRID CONTAINER -->
-      <div class="projects__container">
-        <!-- ENTIRE TOP LEFT BOX (H) && FADE-UP STYLING  -->
-        <div class="item--h" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-center">
-          <!-- CONTENT OF TOP LEFT BOX && HOVER STYLING -->
-          <figure class="imghvr-fade" style="height: 100%; width: 100%;">
-            <img style="height: 100%; width: 100%;" src="./images/memoryMatch.png">
-            <figcaption style="background-color:#f5f5f5; color: black;">
-              <h3 style="
+    </div>
+    <hr class="header__underline" data-aos="fade-right" data-aos-anchor-placement="top-center">
+    <div class="about__container">
+      <!-- hex with monitor -->
+      <div class="about__container__item1 item--a">
+        <div class="octagon__box" style="height: 100px; width:100px;" data-aos="flip-right" data-aos-delay="100">
+          <img class="octagon__box__image" src="./images/monitor.png" style="height: 50%; width: 50%;" alt="">
+        </div>
+        <article data-aos="fade-in" data-aos-delay="100" data-aos-offset "160">
+          <h3 class="about__container_item1__title text__h3--black">Integration</h3>
+          <p class="about__container_item1__title">Using standards and best practices to speed up development and debugging.</p>
+        </article>
+      </div>
+      <!-- hex with bulb -->
+      <div class="about__container__item1 item--b">
+        <div class="octagon__box" style="height: 100px; width:100px;" data-aos="flip-right" data-aos-delay="400">
+          <img class="octagon__box__image" src="./images/intuitive.png" style="height: 50%; width: 50%;" alt="">
+        </div>
+        <article data-aos="fade-in" data-aos-delay="400" data-aos-offset "160">
+          <h3 class="about__container_item1__title text__h3--black">Resolve</h3>
+          <p class="about__container_item1__title">Full stack experience means I can tackle all development aspects of a project.</p>
+        </article>
+      </div>
+      <!-- hex with bullhorn -->
+      <div class="about__container__item1 item--c">
+        <div class="octagon__box" style="height: 100px; width:100px;" data-aos="flip-right" data-aos-delay="650">
+          <img class="octagon__box__image" src="./images/bullhorn.png" style="height: 50%; width: 50%;" alt="">
+        </div>
+        <article data-aos="fade-in" data-aos-delay="650" data-aos-offset "160">
+          <h3 class="about__container_item1__title text__h3--black">Communication</h3>
+          <p class="about__container_item1__title" class='text--black'>A priority to communicate with my team allows for accelerated success.</p>
+        </article>
+      </div>
+      <!-- hex with clock -->
+      <div class="about__container__item1 item--d">
+        <div class="octagon__box" style="height: 100px; width:100px;" data-aos="flip-right" data-aos-delay="900">
+          <img class="octagon__box__image" src="./images/response.png" style="height: 50%; width: 50%;" alt="">
+        </div>
+        <article data-aos="fade-in" data-aos-delay="900" data-aos-offset "160">
+          <h3 class="about__container_item1__title text__h3--black">Responsive</h3>
+          <p class="about__container_item1__title">Utilizing the latest tools and frameworks to maximize responsiveness on all devices.</p>
+        </article>
+      </div>
+      <div class="item--e">
+        <img data-aos="fade-right" data-aos-delay="400" data-aos-offset "160" class="mypic" src="./images/editedme.jpg" alt="mypic">
+      </div>
+      <div class="item--f">
+        <h3 data-aos="fade-left" data-aos-delay="400" data-aos-offset "160" class="about__container_bio__title text__h3--black">Who is Mark?</h3>
+        <p data-aos="fade-left" data-aos-delay="400" data-aos-offset "160" class="about__container_bio__paragraph text--black">
+          A MERN Full-Stack Web Developer who has a passion for building new digital products. I am constantly excited when I learn
+          how to use new tools because of the possibilities it unlocks for me. I love sharing my knowledge and knowing that
+          I have saved somebody on my team time and struggle. My greatest goal in life is to contribute to a project that
+          enhances peoples lives across the world. </p>
+      </div>
+    </div>
+  </section>
+  <!-- projects section -->
+  <section class="projects">
+    <a name="portfolioAnchor"></a>
+    <div class="about__box">
+      <div class="text--black about__header" data-aos="fade-right" data-aos-anchor-placement="top-bottom">Projects
+      </div>
+    </div>
+    <hr class="header__underline" data-aos="fade-right" data-aos-anchor-placement="top-center">
+    <!-- PROJECTS GRID CONTAINER -->
+    <div class="projects__container">
+      <!-- ENTIRE TOP LEFT BOX (H) && FADE-UP STYLING  -->
+      <div class="item--h" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-center">
+        <!-- CONTENT OF TOP LEFT BOX && HOVER STYLING -->
+        <figure class="imghvr-fade" style="height: 100%; width: 100%;">
+          <img style="height: 100%; width: 100%;" src="./images/memoryMatch.png">
+          <figcaption style="background-color:#f5f5f5; color: black;">
+            <h3 style="
                 color: black;
                 text-align: center;">Memory Game</h3>
-              <br>
-              <p style="
+            <br>
+            <p style="
                 color: black;
                 text-align: center;">Find the pair - React.js, Semantic-UI</p>
-            </figcaption>
-            <a href="https://markhinojosa.github.io/Big-Kahuna/" style="object-fit: contain; height: 100%;"></a>
-          </figure>
-        </div>
-        <!-- ENTIRE TOP RIGHT BOX (I) && FADE-UP STYLING  -->
-        <div class="item--i" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-center">
-          <!-- CONTENT OF TOP RIGHT BOX && HOVER STYLING -->
-          <figure class="imghvr-fade" style="height: 100%; width: 100%;background-color:#f5f5f5; color: black;">
-            <img style="height: 100%; width: 100%; background-color:#f5f5f5; color: black;" src="./images/blog.png">
-            <figcaption style="background-color:#f5f5f5; color: black;">
-              <h3 style="
+          </figcaption>
+          <a href="https://markhinojosa.github.io/Big-Kahuna/" style="object-fit: contain; height: 100%;"></a>
+        </figure>
+      </div>
+      <!-- ENTIRE TOP RIGHT BOX (I) && FADE-UP STYLING  -->
+      <div class="item--i" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-center">
+        <!-- CONTENT OF TOP RIGHT BOX && HOVER STYLING -->
+        <figure class="imghvr-fade" style="height: 100%; width: 100%;background-color:#f5f5f5; color: black;">
+          <img style="height: 100%; width: 100%; background-color:#f5f5f5; color: black;" src="./images/blog.png">
+          <figcaption style="background-color:#f5f5f5; color: black;">
+            <h3 style="
                 color: black;
                 text-align: center;">My Blog</h3>
-              <br>
-              <p style="
+            <br>
+            <p style="
                 color: black;
                 text-align: center;">Web Blog - HTML, CSS</p>
-            </figcaption>
-            <a href="https://markhinojosa.github.io/web-workbook/02week/blog/index.html" style="object-fit: contain; height: 100%;"></a>
-          </figure>
-        </div>
-        <!-- ENTIRE BOTTOM LEFT BOX (J) && FADE-UP STYLING  -->
-        <div class="item--j" data-aos="fade-up" data-aos-delay="500">
-          <!-- CONTENT OF TOP RIGHT BOX && HOVER STYLING -->
-          <figure class="imghvr-fade">
-            <img style="height: 100%; width: 100%;" src="./images/fate.png">
-            <figcaption style="background-color:#f5f5f5; color: black;">
-              <h3 style="
+          </figcaption>
+          <a href="https://markhinojosa.github.io/web-workbook/02week/blog/index.html" style="object-fit: contain; height: 100%;"></a>
+        </figure>
+      </div>
+      <!-- ENTIRE BOTTOM LEFT BOX (J) && FADE-UP STYLING  -->
+      <div class="item--j" data-aos="fade-up" data-aos-delay="500">
+        <!-- CONTENT OF TOP RIGHT BOX && HOVER STYLING -->
+        <figure class="imghvr-fade">
+          <img style="height: 100%; width: 100%;" src="./images/fate.png">
+          <figcaption style="background-color:#f5f5f5; color: black;">
+            <h3 style="
                 color: black;
                 text-align: center;">A Boy's Fate</h3>
-              <br>
-              <p style="
+            <br>
+            <p style="
                 color: black;
                 text-align: center;">Web RPG - HTML, CSS</p>
-            </figcaption>
-            <a href="https://raceofrobots.github.io/#A" style="object-fit: contain; height: 100%;"></a>
-          </figure>
-        </div>
-        <!-- ENTIRE BOTTOM LEFT BOX (K) && FADE-UP STYLING  -->
-        <div class="item--k" data-aos="fade-up" data-aos-delay="600">
-          <!-- CONTENT OF TOP RIGHT BOX && HOVER STYLING -->
-          <figure class="imghvr-fade">
-            <img style="height: 100%; width: 100%;" src="./images/project-seed.png">
-            <figcaption style="background-color:#f5f5f5; color: black;">
-              <h3 style="
+          </figcaption>
+          <a href="https://raceofrobots.github.io/#A" style="object-fit: contain; height: 100%;"></a>
+        </figure>
+      </div>
+      <!-- ENTIRE BOTTOM LEFT BOX (K) && FADE-UP STYLING  -->
+      <div class="item--k" data-aos="fade-up" data-aos-delay="600">
+        <!-- CONTENT OF TOP RIGHT BOX && HOVER STYLING -->
+        <figure class="imghvr-fade">
+          <img style="height: 100%; width: 100%;" src="./images/project-seed.png">
+          <figcaption style="background-color:#f5f5f5; color: black;">
+            <h3 style="
               font-size: 20pt;
               color: black;
               text-align: center;">Project Seed</h3>
-              <br>
-              <p style="
+            <br>
+            <p style="
               font-size: 16pt;
               color: black;
               text-align: center;">Knowledge sharing platform </p>
-              <p style="
+            <p style="
               font-weight: bold;
               font-size: 16pt;
               color: black;
               text-align: center;"> React.js, MongoDB, Express.js, Router, Redux</p>
-            </figcaption>
-            <a href="https://github.com/MarkHinojosa/project-seed" style="object-fit: contain; height: 100%;"></a>
-          </figure>
-        </div>
+          </figcaption>
+          <a href="https://github.com/MarkHinojosa/project-seed" style="object-fit: contain; height: 100%;"></a>
+        </figure>
       </div>
-    </section>
+    </div>
+  </section>
   </div>
   </div>
   <script src="plugins/aos/aos.js "></script>
