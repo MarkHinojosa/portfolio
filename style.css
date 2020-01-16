@@ -19,10 +19,10 @@ canvas {
   background-color: black;
   width: 100%;
   height: 100vh;
-  position:absolute;
-  left:0;
-  top:0;
-  z-index:-1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .test {
@@ -326,11 +326,11 @@ block {
   width: 100%;
   overflow: hidden;
   margin: 0.2em auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 30% 30% 30% 30%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "xeta h i xet"
-    "xeta j k xet";
+    "xeta h i j xet"
+    "xeta k l m xet";
   padding-top: 5%;
   height: 60%;
   display: grid;
@@ -377,6 +377,16 @@ block {
   /* background-image: url(./images/project-seed.png); */
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.item--l {
+  height: 100%;
+  grid-area: l;
+}
+
+.item--m {
+  height: 100%;
+  grid-area: m;
 }
 
 .contact {
@@ -434,6 +444,12 @@ block {
   height: 50px;
 }
 
+.projectsBorder {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
 @media screen and (max-width: 760px) {
   .about__container {
     padding: 80px 8% 3%;
@@ -454,8 +470,8 @@ block {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30% 30% 30% 30%;
     grid-template-areas:
-      "h i"
-      "j k";
+      "h i j"
+      "k l m";
     padding-top: 5%;
     height: 60%;
     display: grid;
